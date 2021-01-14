@@ -1,0 +1,30 @@
+.back-image{
+	background-image: url('images/bg2.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-color: lightgrey;
+	/*height: 600px;*/
+}
+
+
+@media (max-width: 768px) {
+	nav.navbar{
+		background: lightgray;
+		position: relative;
+	}
+
+	#navbarSupportedContent{
+		border-top: 1px solid black;
+	}
+
+	.bot-border{
+		border-bottom: 1px solid lightgray;
+	}
+
+}
+ 
+ @media (max-width: 992px) {
+	.bor{
+		border-bottom: 1px solid lightgray;
+	}
+}
