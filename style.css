@@ -1,9 +1,9 @@
-.back-image{
-	background-image: url('images/bg2.jpg');
+
+.back-image {
+	background-image: url('images/bg.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-color: lightgrey;
-	/*height: 600px;*/
 }
 
 .dropdown-menu a:hover, .dropdown-menu a:focus {
@@ -29,6 +29,59 @@
 	padding: 0!important;
 }
 
+.txt-shadow { text-shadow: 3px 3px 30px #535353; }
+
+.highlight:hover {
+	color: black;
+}
+
+.highlight {
+	color: grey;
+}
+
+.screen-overlay {
+	height: 100%;
+	z-index: 30;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity:0;
+	visibility:hidden;
+	background-color: rgba(34, 34, 34, 0.6);
+	transition:opacity .2s linear, visibility .1s, width 1s ease-in;
+}
+.screen-overlay.show {
+	transition:opacity .5s ease, width 0s;
+	opacity:1;
+	width:100%;
+	visibility:visible;
+}
+
+.offcanvas {
+	width:270px;
+	visibility: hidden;
+	transform:translateX(100%);
+	transition:all .2s;
+	border-radius:0; 
+	box-shadow: 0 5px 10px rgba(0,0,0, .2);
+	display:block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: auto;
+	height: 100%;
+	z-index: 1200;
+	background-color: #fff /*#e4e4e4*/;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.offcanvas.show {
+	visibility: visible;
+	transform: translateX(0);
+	transition: transform .2s;
+}
+
 @media (max-width: 768px) {
 	nav.navbar{
 		background: lightgray;
@@ -36,19 +89,13 @@
 		top: 1px;
 	}
 
-	#navbarSupportedContent{
-		border-top: 1px solid black;
-	}
+	#navbarSupportedContent{ border-top: 1px solid black; }
 
-	.bot-border{
-		border-bottom: 1px solid lightgray;
-	}
+	.bot-border{ border-bottom: 1px solid lightgray; }
 }
  
 @media (max-width: 992px) {
-	.bor{
-		border-bottom: 1px solid lightgray;
-	}
+	.bor{ border-bottom: 1px solid lightgray; }
 }
 
 @media all and (min-width: 992px) {
